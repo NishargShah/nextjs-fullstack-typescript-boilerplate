@@ -1,23 +1,44 @@
-import type { Endpoints } from '@/types/axios.type';
+import { buildFullUrls } from '@/api/utils';
+
+import type { Endpoints, SuccessOutput } from '@/types/axios.type';
 
 const endpoints = {
-  login: {
-    method: 'POST',
-    url: '/auth/login',
-    manageToast: (res) => !!res.message,
+  // Auth endpoints
+  auth: {
+    prefix: 'auth',
+    login: {
+      method: 'POST',
+      url: 'login',
+      manageToast: (res: SuccessOutput) => !!res.message,
+    },
   },
-  getProfile: {
+
+  // User endpoints
+  user: {
+    prefix: 'user',
+    profile: {
+      prefix: 'profile',
+      me: {
+        method: 'GET',
+        url: 'me',
+        manageToast: (res: SuccessOutput) => !!res.message,
+      },
+      logout: {
+        method: 'POST',
+        url: 'logout',
+        manageToast: (res: SuccessOutput) => !!res.message,
+      },
+    },
+  },
+
+  // Users endpoints
+  users: {
     method: 'GET',
-    url: '/user/profile/me',
-  },
-  logout: {
-    method: 'POST',
-    url: '/user/profile/logout',
-  },
-  getAllUsers: {
-    method: 'GET',
-    url: '/users',
+    url: 'users',
+    manageToast: (res: SuccessOutput) => !!res.message,
   },
 } satisfies Endpoints;
 
-export default endpoints;
+const finalEndpoints = buildFullUrls(endpoints);
+
+export default finalEndpoints;
