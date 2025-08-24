@@ -36,8 +36,6 @@ export class AppError extends Error {
     this.status = statusCode;
     this.extraFields = extraFields;
     this.isOperational = true;
-
-    if ('captureStackTrace' in Error) Error.captureStackTrace(this, this.constructor);
   }
 }
 
