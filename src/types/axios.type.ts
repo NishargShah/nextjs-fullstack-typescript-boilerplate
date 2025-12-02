@@ -21,7 +21,12 @@ export type AxiosRequestConfigWithExtraProps = AxiosRequestConfig & AxiosExtraPr
 
 type AxiosRequestInput = Pick<AxiosRequestConfigWithExtraProps, 'method' | 'url'> & ManageToast;
 
-export type Endpoints = Record<string, AxiosRequestInput>;
+interface NestedEndpoint {
+  prefix?: string;
+  [key: string]: NestedEndpoint | AxiosRequestInput | string | undefined;
+}
+
+export type Endpoints = Record<string, AxiosRequestInput | NestedEndpoint>;
 
 export type InternalAxiosRequestConfigWithExtraProps = InternalAxiosRequestConfig & AxiosExtraProps;
 

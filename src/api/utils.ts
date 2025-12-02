@@ -3,7 +3,13 @@ import { toast } from 'react-toastify';
 
 import { AppError } from '@/api/appError';
 
-import type { AxiosErrConfig, ShowToast, SuccessOutput, ThrowAxiosError } from '@/types/axios.type';
+import type {
+  AxiosErrConfig,
+  Endpoints,
+  ShowToast,
+  SuccessOutput,
+  ThrowAxiosError,
+} from '@/types/axios.type';
 
 export class AxiosErr extends AxiosError {
   config?: AxiosErrConfig;
@@ -44,3 +50,30 @@ export const showToast: ShowToast = (res) => {
   const call = isError ? 'error' : 'success';
   toast[call](toastMessage);
 };
+
+export function buildFullUrls(obj: Endpoints, parentPrefix = ''): Endpoints {
+  const result: Endpoints = {};
+
+  for (const key in obj) {
+    if (Object.hasOwn(obj, key)) {
+      const value = obj[key];
+
+      if (typeof value === 'object' && !Array.isArray(value)) {
+        const currentPrefix =
+          parentPrefix + ('prefix' in value && value.prefix ? `/${value.prefix}` : '');
+
+        result[key] =
+          'method' in value && 'url' in value
+            ? {
+                ...value,
+                url: `${currentPrefix}/${value.url}`,
+              }
+            : buildFullUrls(value as Endpoints, currentPrefix);
+      } else {
+        result[key] = value;
+      }
+    }
+  }
+
+  return result;
+}
