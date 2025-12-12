@@ -21,23 +21,23 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@tanstack/react-query": "5.87.1",
+    "@tanstack/react-query": "5.90.12",
     "axios": "^1.13.2",
     "clsx": "^2.1.1",
     "cookies-next": "^6.1.1",
-    "next": "^16.0.5",
+    "next": "^16.0.10",
     "next-nprogress-bar": "^2.4.7",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-hook-form": "^7.67.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-hook-form": "^7.68.0",
     "react-toastify": "^11.0.5",
-    "zustand": "^5.0.8"
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@eslint/compat": "^2.0.0",
     "@eslint/js": "^9.39.1",
-    "@next/eslint-plugin-next": "^16.0.5",
-    "@stylistic/eslint-plugin": "^3.1.0",
+    "@next/eslint-plugin-next": "^16.0.10",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "@tanstack/eslint-plugin-query": "^5.91.2",
     "@tanstack/react-query-devtools": "5.91.1",
     "@types/node": "^24.10.1",
@@ -45,7 +45,7 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.1",
     "eslint-config-airbnb-extended": "^2.3.3",
-    "eslint-config-next": "^16.0.5",
+    "eslint-config-next": "^16.0.10",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-import-x": "^4.16.1",
@@ -58,13 +58,13 @@
     "eslint-plugin-unused-imports": "^4.3.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.7.3",
+    "prettier": "^3.7.4",
     "prettier-plugin-packagejson": "^2.5.20",
-    "type-fest": "^5.2.0",
+    "type-fest": "^5.3.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0"
+    "typescript-eslint": "^8.49.0"
   },
-  "packageManager": "pnpm@10.24.0",
+  "packageManager": "pnpm@10.25.0",
   "engines": {
     "node": ">=22.0.0",
     "npm": "please-use-pnpm",
