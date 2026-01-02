@@ -3,9 +3,10 @@ import { NextResponse } from 'next/server';
 import constants from '@/constants';
 import cookieStore from '@/lib/cookieStore';
 
-import type { NextMiddleware } from 'next/server';
+import type { NextProxy } from 'next/server';
 
-export const middleware: NextMiddleware = async (request) => {
+// eslint-disable-next-line import-x/prefer-default-export
+export const proxy: NextProxy = async (request) => {
   const { headers, nextUrl } = request;
   const { pathname } = nextUrl;
 
