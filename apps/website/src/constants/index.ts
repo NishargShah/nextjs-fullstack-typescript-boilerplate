@@ -1,4 +1,4 @@
-import { isLive } from '@/utils';
+import { isProduction } from '@/utils';
 
 const constants = {
   APP_NAME: 'Next.js Template',
@@ -12,7 +12,7 @@ const constants = {
     DARK: 'dark',
     SYSTEM: 'system',
   },
-  PROGRESS_BAR_DELAY: isLive ? 200 : 500,
+  PROGRESS_BAR_DELAY: isProduction ? 200 : 500,
   STARTUP_PROGRESS_BAR_TIMEOUT: 200,
 } as const;
 
