@@ -11,10 +11,11 @@
 ## Installation
 
 1. Run `pnpm install`.
-2. Start the project with `pnpm start` (use `pnpm start:dev` for development).
+2. Start the project with `pnpm dev`.
 
 ## Features
 
+- Monorepo structure
 - Fully typed with TypeScript.
 - Full-stack application.
 - React Query for server state and Zustand for client state.
@@ -33,4 +34,4 @@ Password: admin
 ```
 
 **Last updated by:** Nisharg Shah  
-**Date:** 09/03/2025
+**Date:** 23/02/2026

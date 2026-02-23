@@ -3,12 +3,19 @@ node_modules
 .pnp
 .pnp.js
 
+# ignore folders
+.git
+.husky
+
 # testing
 coverage
 
 # production
 build
 dist
+
+# generated
+generated
 
 # misc
 .DS_Store
@@ -34,4 +41,6 @@ next-env.d.ts
 .idea
 
 # local env files
-.env*.local
+.env*
+!.env.example
+!.env.environment.example
