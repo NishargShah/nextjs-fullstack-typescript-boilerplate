@@ -71,9 +71,9 @@ importers:
       react-hook-form:
         specifier: ^7.71.2
         version: 7.71.2(react@19.2.4)
-      react-toastify:
-        specifier: ^11.0.5
-        version: 11.0.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+      react-hot-toast:
+        specifier: ^2.6.0
+        version: 2.6.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       zustand:
         specifier: ^5.0.11
         version: 5.0.11(@types/react@19.2.14)(react@19.2.4)
@@ -243,8 +243,8 @@ packages:
     resolution: {integrity: sha512-/nr9K9wkr3P1EzFTdFdMoLuo1PmIxjmwvPozwoSodjNBdefGujXQUF93u1DDZpEaTuDvMsIQddsd35BwtrW9Xw==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@eslint/eslintrc@3.3.3':
-    resolution: {integrity: sha512-Kr+LPIUVKz2qkx1HAMH8q1q6azbqBAsXJUxBl/ODDuVPX45Z9DfwB8tPjTi6nNZ8BuM3nbJxC5zCAg5elnBUTQ==}
+  '@eslint/eslintrc@3.3.4':
+    resolution: {integrity: sha512-4h4MVF8pmBsncB60r0wSJiIeUKTSD4m7FmTFThG8RHlsg9ajqckLm9OraguFGZE4vVdpiI1Q4+hFnisopmG6gQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/js@9.39.3':
@@ -1437,6 +1437,11 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
+  goober@2.1.18:
+    resolution: {integrity: sha512-2vFqsaDVIT9Gz7N6kAL++pLpp41l3PfDuusHcjnGLfR6+huZkl6ziX+zgVC3ZxpqWhzH6pyDdGrCeDhMIvwaxw==}
+    peerDependencies:
+      csstype: ^3.0.10
+
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
@@ -1934,14 +1939,15 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
 
+  react-hot-toast@2.6.0:
+    resolution: {integrity: sha512-bH+2EBMZ4sdyou/DPrfgIouFpcRLCJ+HoCA32UoAYHn6T3Ur5yfcDCeSr5mwldl6pFOsiocmrXMuoCJ1vV8bWg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
-
-  react-toastify@11.0.5:
-    resolution: {integrity: sha512-EpqHBGvnSTtHYhCPLxML05NLY2ZX0JURbAdNYa6BUkk+amz4wbKBQvoKQAB0ardvSarUBuY4Q4s1sluAzZwkmA==}
-    peerDependencies:
-      react: ^18 || ^19
-      react-dom: ^18 || ^19
 
   react@19.2.4:
     resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
@@ -2475,7 +2481,7 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  '@eslint/eslintrc@3.3.3':
+  '@eslint/eslintrc@3.3.4':
     dependencies:
       ajv: 6.14.0
       debug: 4.4.3
@@ -3561,7 +3567,7 @@ snapshots:
       '@eslint/config-array': 0.21.1
       '@eslint/config-helpers': 0.4.2
       '@eslint/core': 0.17.0
-      '@eslint/eslintrc': 3.3.3
+      '@eslint/eslintrc': 3.3.4
       '@eslint/js': 9.39.3
       '@eslint/plugin-kit': 0.4.1
       '@humanfs/node': 0.16.7
@@ -3744,6 +3750,10 @@ snapshots:
       gopd: 1.2.0
 
   globrex@0.1.2: {}
+
+  goober@2.1.18(csstype@3.2.3):
+    dependencies:
+      csstype: 3.2.3
 
   gopd@1.2.0: {}
 
@@ -4224,13 +4234,14 @@ snapshots:
     dependencies:
       react: 19.2.4
 
-  react-is@16.13.1: {}
-
-  react-toastify@11.0.5(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  react-hot-toast@2.6.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
-      clsx: 2.1.1
+      csstype: 3.2.3
+      goober: 2.1.18(csstype@3.2.3)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
+
+  react-is@16.13.1: {}
 
   react@19.2.4: {}
 

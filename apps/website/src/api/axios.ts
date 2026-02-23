@@ -1,5 +1,5 @@
 import axiosInstance from 'axios';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
 
 import { showToast } from '@/api/utils';
 import { envs } from '@/config';

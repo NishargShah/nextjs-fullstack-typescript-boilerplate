@@ -1,5 +1,5 @@
 import { AxiosError } from 'axios';
-import { toast } from 'react-toastify';
+import { toast } from 'react-hot-toast';
 
 import { AppError } from '@/api/appError';
 

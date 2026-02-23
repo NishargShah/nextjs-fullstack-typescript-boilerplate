@@ -1,5 +1,4 @@
 import { envs } from '@/config';
-
 import { environments } from '@/constants/objects';
 
 const { NODE_ENV, ENV_NAME } = envs;
