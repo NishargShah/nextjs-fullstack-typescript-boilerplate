@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 
 import App from '@/app/app';
 import constants from '@/constants';

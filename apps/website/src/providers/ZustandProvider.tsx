@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useRef } from 'react';
+import { createContext, useContext, useRef } from 'react';
 
 import createStore from '@/store';
 

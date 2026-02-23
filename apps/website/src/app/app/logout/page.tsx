@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Logout from '@/components/logout/Logout';
 import constants from '@/constants';
 

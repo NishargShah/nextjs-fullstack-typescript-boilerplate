@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useQueryErrorResetBoundary } from '@tanstack/react-query';
 
 import styles from '@/components/defaults/error/Error.module.css';

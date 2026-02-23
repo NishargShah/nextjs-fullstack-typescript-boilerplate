@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Providers from '@/app/providers';
 import AppClient from '@/components/AppClient';
 import Header from '@/components/header/Header';

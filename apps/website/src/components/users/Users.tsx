@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 import styles from '@/components/users/Users.module.css';
 import { useUsers } from '@/features/users/useUsers';
 

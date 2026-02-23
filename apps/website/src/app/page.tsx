@@ -1,5 +1,3 @@
-import React from 'react';
-
 import constants from '@/constants';
 
 import type { Metadata } from 'next';

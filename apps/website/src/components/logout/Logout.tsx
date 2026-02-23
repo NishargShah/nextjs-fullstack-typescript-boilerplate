@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { useLogout } from '@/features/profile/useLogout';
 import { useRouter } from '@/hooks/useRouter';

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useCallback, useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 
 import constants from '@/constants';
 import { useStore } from '@/hooks/useStore';

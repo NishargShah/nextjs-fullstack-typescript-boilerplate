@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from '@/shared/loader/Loader.module.css';
 
 import type { Component } from '@/types';

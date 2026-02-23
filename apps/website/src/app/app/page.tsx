@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 
 import Dashboard from '@/components/dashboard/Dashboard';
 import constants from '@/constants';

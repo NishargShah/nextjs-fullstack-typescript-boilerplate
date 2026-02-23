@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 import Error from '@/components/defaults/error/Error';
 import { interFont } from '@/styles/font';
 

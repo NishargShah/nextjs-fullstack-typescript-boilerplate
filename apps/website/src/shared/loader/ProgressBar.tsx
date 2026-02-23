@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { AppProgressBar } from 'next-nprogress-bar';
 import ReactDOMServer from 'react-dom/server';
 
