@@ -1,6 +1,6 @@
 import type { RecursiveType } from '@/types';
 
-export interface AppErrorType {
+interface AppErrorType {
   message: string | string[] | (() => string | string[]);
   messages: string[] | undefined;
   statusCode: number;
@@ -12,8 +12,6 @@ export class AppError extends Error {
   public messages: AppErrorType['messages'];
 
   public statusCode: AppErrorType['statusCode'];
-
-  public status: AppErrorType['statusCode'];
 
   public extraFields: AppErrorType['extraFields'];
 
@@ -27,14 +25,13 @@ export class AppError extends Error {
   constructor(
     message: AppErrorType['message'],
     statusCode: AppErrorType['statusCode'],
-    extraFields: AppErrorType['extraFields'] = {},
+    extraFields?: AppErrorType['extraFields'],
   ) {
     super();
     this.message = AppError.getMessage(message);
     this.messages = Array.isArray(message) ? message : undefined;
     this.statusCode = statusCode || 400;
-    this.status = statusCode;
-    this.extraFields = extraFields;
+    this.extraFields = extraFields ?? {};
     this.isOperational = true;
   }
 }

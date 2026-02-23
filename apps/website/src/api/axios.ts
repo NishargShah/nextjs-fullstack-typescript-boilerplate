@@ -2,7 +2,7 @@ import axiosInstance from 'axios';
 import { toast } from 'react-toastify';
 
 import { showToast } from '@/api/utils';
-import config from '@/config';
+import { envs } from '@/config';
 import cookieStore from '@/lib/cookieStore';
 import { isServer } from '@/utils';
 
@@ -11,7 +11,7 @@ import type { AxiosError } from 'axios';
 import type { AxiosErr } from '@/api/utils';
 import type { InternalAxiosRequestConfigWithExtraProps } from '@/types/axios.type';
 
-const axios = axiosInstance.create({ baseURL: config.NEXT_PUBLIC_API_PATH, withCredentials: true });
+const axios = axiosInstance.create({ baseURL: envs.NEXT_PUBLIC_API_PATH, withCredentials: true });
 
 axios.interceptors.request.use(
   async (conf: InternalAxiosRequestConfigWithExtraProps) => {
