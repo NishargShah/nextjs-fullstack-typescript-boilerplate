@@ -1,22 +1,17 @@
 {
-  "name": "project-name",
+  "name": "@repo/website",
   "version": "0.0.1",
   "private": true,
-  "description": "project-description",
-  "keywords": [
-    "project keywords"
-  ],
-  "license": "ISC",
+  "description": "@repo/website description",
   "author": "Nisharg Shah",
+  "type": "module",
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
-    "format:check": "prettier . --check",
-    "format:fix": "prettier . --write",
+    "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
+    "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
     "lint": "eslint .",
-    "lint:fix": "pnpm --silent lint --fix",
-    "prepare": "husky",
-    "script:lint": "bash -e ./scripts/lint.sh",
+    "lint:fix": "eslint . --fix",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
@@ -34,32 +29,13 @@
     "zustand": "^5.0.11"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.2",
-    "@eslint/js": "^9.39.3",
     "@tanstack/eslint-plugin-query": "^5.91.4",
     "@tanstack/react-query-devtools": "5.91.3",
-    "@types/node": "^24.10.13",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "eslint": "^9.39.3",
-    "eslint-config-airbnb-extended": "3.0.1",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-unicorn": "^62.0.0",
-    "eslint-plugin-unused-imports": "^4.4.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "prettier": "^3.8.1",
-    "prettier-plugin-packagejson": "^3.0.0",
-    "type-fest": "^5.4.4",
-    "typescript": "^5.9.3"
+    "type-fest": "^5.4.4"
   },
-  "packageManager": "pnpm@10.30.1",
   "engines": {
-    "node": ">=24.0.0",
-    "npm": "please-use-pnpm",
-    "pnpm": ">=10.0.0",
-    "yarn": "please-use-pnpm"
+    "node": ">=24.0.0"
   }
 }

@@ -9,4 +9,12 @@ export const tsConfig = defineConfig([
   ...configs.base.typescript,
   // Strict TypeScript rules
   rules.typescript.typescriptEslintStrict,
+  // Disable Return Type for Features Hook
+  {
+    name: 'x/typescript-eslint/features-hook-only',
+    files: ['src/features/**/use*.ts'],
+    rules: {
+      '@typescript-eslint/explicit-module-boundary-types': 'off',
+    },
+  },
 ]);

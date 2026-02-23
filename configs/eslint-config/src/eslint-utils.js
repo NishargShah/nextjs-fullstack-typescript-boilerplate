@@ -28,33 +28,3 @@ export const getNoExtraneousDependenciesRule = (whitelist = []) => [
     ],
   },
 ];
-
-export const getNoRestrictedImportsPatterns = () => {
-  const rules = {
-    absolutePath: {
-      group: ['./*', '../*'],
-      message: "Please use the absolute path '@/*' instead.",
-    },
-    restrictConstants: [
-      {
-        group: ['@/constants/app/*'],
-        message: 'Please import directly from the app instead.',
-      },
-      {
-        group: ['@/constants/messages/*'],
-        message: 'Please import directly from the locales instead.',
-      },
-    ],
-    restrictUtils: {
-      group: ['@/utils/*'],
-      allowImportNames: ['CatchAsyncFn'],
-      message: 'Please import directly from the utils instead.',
-    },
-  };
-
-  return {
-    tsOnly: Object.values(rules).flat(),
-    ignoreConstants: [rules.absolutePath, rules.restrictUtils],
-    ignoreUtils: [rules.absolutePath, ...rules.restrictConstants],
-  };
-};

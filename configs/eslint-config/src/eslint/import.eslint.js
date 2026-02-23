@@ -29,4 +29,12 @@ export const importConfig = defineConfig([
       'import-x/no-extraneous-dependencies': getNoExtraneousDependenciesRule(),
     },
   },
+  // Disable Default Export for Features and Hooks
+  {
+    name: 'x/import-x/disable-default-export',
+    files: ['**/features/**/**.api.ts', '**/use*.ts'],
+    rules: {
+      'import-x/prefer-default-export': 'off',
+    },
+  },
 ]);

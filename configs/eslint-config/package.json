@@ -8,6 +8,8 @@
   "exports": {
     "./base": "./src/eslint-base.config.js",
     "./internal": "./src/eslint-internal.config.js",
+    "./next": "./src/eslint-next.config.js",
+    "./react": "./src/eslint-react.config.js",
     "./root": "./src/eslint-root.config.js",
     "./utils": "./src/eslint-utils.js",
     "./package.json": "./package.json"

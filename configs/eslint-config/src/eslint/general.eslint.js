@@ -1,4 +1,4 @@
-import { defineConfig, getNoRestrictedImportsPatterns } from '../eslint-utils.js';
+import { defineConfig } from '../eslint-utils.js';
 
 export const generalConfig = defineConfig([
   // General ESLint rules
@@ -22,6 +22,16 @@ export const generalConfig = defineConfig([
         'DoWhileStatement',
         'WhileStatement',
         'WithStatement',
+        // React
+        {
+          selector: 'MemberExpression[object.name="React"]',
+          message: 'Use of React.method is not allowed.',
+        },
+        // React - TypeScript
+        {
+          selector: 'TSTypeReference[typeName.left.name="React"]',
+          message: 'Use of React.type is not allowed.',
+        },
       ],
     },
   },
@@ -33,7 +43,12 @@ export const generalConfig = defineConfig([
       'no-restricted-imports': [
         'error',
         {
-          patterns: getNoRestrictedImportsPatterns().tsOnly,
+          patterns: [
+            {
+              group: ['./*', '../*'],
+              message: "Please use the absolute path '@/*' instead.",
+            },
+          ],
         },
       ],
     },
