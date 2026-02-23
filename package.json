@@ -6,7 +6,6 @@
   "author": "Nisharg Shah <nishargshah3101@gmail.com>",
   "type": "module",
   "scripts": {
-    "website:dev": "pnpm --filter @repo/website dev",
     "build": "pnpm -r build",
     "clean:all": "pnpm clean:node_modules && pnpm clean:generated-folders",
     "clean:dist": "pnpx rimraf dist && pnpm -r exec pnpx rimraf dist",
@@ -24,7 +23,8 @@
     "root:lint": "eslint .",
     "root:lint:fix": "eslint . --fix",
     "script:lint": "bash -e ./scripts/lint.sh",
-    "typecheck": "pnpm -r typecheck"
+    "typecheck": "pnpm -r typecheck",
+    "website:dev": "pnpm --filter @repo/website dev"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
