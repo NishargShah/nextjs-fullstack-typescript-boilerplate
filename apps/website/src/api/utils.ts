@@ -6,7 +6,7 @@ import { AppError } from '@/api/appError';
 import type { AxiosErrConfig, ShowToast, SuccessOutput, ThrowAxiosError } from '@/types/axios.type';
 
 export class AxiosErr extends AxiosError {
-  config?: AxiosErrConfig;
+  declare config?: AxiosErrConfig;
 }
 
 export const throwAxiosError: ThrowAxiosError = (error) => {

@@ -7,6 +7,6 @@ import type { AppError } from '@/api/appError';
 type UseAppMutation = <Input, Output, TOnMutateResult = unknown>(
   options: UseMutationOptions<Output | null, AppError, Input, TOnMutateResult>,
   queryClient?: QueryClient,
-) => UseMutationResult<Output, AppError, Input, TOnMutateResult>;
+) => UseMutationResult<Output | null, AppError, Input, TOnMutateResult>;
 
 export const useAppMutation: UseAppMutation = (...params) => useMutation(...params);
