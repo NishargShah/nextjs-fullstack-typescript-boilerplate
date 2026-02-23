@@ -1,5 +1,5 @@
-import type { RemoveFnType } from '@/types';
-import type { SliceCreator } from '@/types/store.type';
+import type { RemoveFnType } from '@/@types';
+import type { SliceCreator } from '@/@types/store.types';
 
 interface LoadingSlice {
   isLoading: boolean;

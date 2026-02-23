@@ -3,7 +3,7 @@
 import Error from '@/components/defaults/error/Error';
 import { interFont } from '@/styles/font';
 
-import type { Component, NextErrorType } from '@/types';
+import type { Component, NextErrorType } from '@/@types/next.types';
 
 const GlobalError: Component<NextErrorType> = (props) => (
   <html lang="en">

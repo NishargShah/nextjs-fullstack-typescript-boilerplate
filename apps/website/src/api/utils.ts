@@ -3,7 +3,12 @@ import { toast } from 'react-toastify';
 
 import { AppError } from '@/api/appError';
 
-import type { AxiosErrConfig, ShowToast, SuccessOutput, ThrowAxiosError } from '@/types/axios.type';
+import type {
+  AxiosErrConfig,
+  ShowToast,
+  SuccessOutput,
+  ThrowAxiosError,
+} from '@/api/@types/api.types';
 
 export class AxiosErr extends AxiosError {
   declare config?: AxiosErrConfig;

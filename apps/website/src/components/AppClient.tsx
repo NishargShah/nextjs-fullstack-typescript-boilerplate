@@ -7,7 +7,7 @@ import { useStore } from '@/hooks/useStore';
 import WebsiteLoader from '@/shared/loader/WebsiteLoader';
 import { sleep } from '@/utils';
 
-import type { Component } from '@/types';
+import type { Component } from '@/@types/next.types';
 
 const AppClient: Component = () => {
   const isLoading = useStore((state) => state.isLoading);

@@ -9,7 +9,7 @@ import type {
   ThemeSliceInitialState,
   ThemeSliceSetDetectedMode,
   ThemeSliceSetModeClient,
-} from '@/store/slices/theme/theme.type';
+} from '@/store/slices/theme/theme.types';
 
 const { LIGHT, DARK, SYSTEM } = constants.THEME;
 

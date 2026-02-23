@@ -6,7 +6,7 @@ import styles from '@/components/header/Header.module.css';
 import { useRouter } from '@/hooks/useRouter';
 import { useStore } from '@/hooks/useStore';
 
-import type { Component } from '@/types';
+import type { Component } from '@/@types/next.types';
 
 const Header: Component = () => {
   const router = useRouter();

@@ -4,7 +4,7 @@ import type {
   AuthSliceGetUser,
   AuthSliceInitialState,
   CreateAuthSlice,
-} from '@/store/slices/auth/auth.type';
+} from '@/store/slices/auth/auth.types';
 
 const initialState: AuthSliceInitialState = {
   isAuthenticated: false,

@@ -8,8 +8,8 @@ import { isServer } from '@/utils';
 
 import type { AxiosError } from 'axios';
 
+import type { InternalAxiosRequestConfigWithExtraProps } from '@/api/@types/api.types';
 import type { AxiosErr } from '@/api/utils';
-import type { InternalAxiosRequestConfigWithExtraProps } from '@/types/axios.type';
 
 const axios = axiosInstance.create({ baseURL: envs.NEXT_PUBLIC_API_PATH, withCredentials: true });
 

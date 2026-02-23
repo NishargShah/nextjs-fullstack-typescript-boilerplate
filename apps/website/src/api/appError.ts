@@ -1,4 +1,4 @@
-import type { RecursiveType } from '@/types';
+import type { RecursiveType } from '@/@types';
 
 interface AppErrorType {
   message: string | string[] | (() => string | string[]);

@@ -3,7 +3,7 @@
 import styles from '@/components/dashboard/Dashboard.module.css';
 import { useStore } from '@/hooks/useStore';
 
-import type { Component } from '@/types';
+import type { Component } from '@/@types/next.types';
 
 const Dashboard: Component = () => {
   const user = useStore((state) => state.user);

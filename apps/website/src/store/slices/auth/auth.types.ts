@@ -1,6 +1,6 @@
+import type { RemoveFnType } from '@/@types';
+import type { SliceCreator } from '@/@types/store.types';
 import type { GetProfileOutput } from '@/features/profile/useProfile';
-import type { RemoveFnType } from '@/types';
-import type { SliceCreator } from '@/types/store.type';
 
 interface AuthSlice {
   isAuthenticated: boolean;

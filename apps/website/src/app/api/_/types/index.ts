@@ -1,6 +1,6 @@
 import type { NextRequest, NextResponse } from 'next/server';
 
-import type { Obj } from '@/types';
+import type { Obj } from '@/@types';
 
 interface RouteContext {
   params: Promise<Obj<string>>;

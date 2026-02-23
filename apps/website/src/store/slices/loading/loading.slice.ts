@@ -1,7 +1,7 @@
 import type {
   CreateLoadingSlice,
   LoadingSliceInitialState,
-} from '@/store/slices/loading/loading.type';
+} from '@/store/slices/loading/loading.types';
 
 const initialState: LoadingSliceInitialState = {
   isLoading: true,

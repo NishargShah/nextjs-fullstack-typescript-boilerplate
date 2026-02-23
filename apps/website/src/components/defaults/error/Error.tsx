@@ -2,7 +2,7 @@ import { useQueryErrorResetBoundary } from '@tanstack/react-query';
 
 import styles from '@/components/defaults/error/Error.module.css';
 
-import type { Component, NextErrorType } from '@/types';
+import type { Component, NextErrorType } from '@/@types/next.types';
 
 const Error: Component<NextErrorType> = ({ error, reset }) => {
   const { reset: queryReset } = useQueryErrorResetBoundary();

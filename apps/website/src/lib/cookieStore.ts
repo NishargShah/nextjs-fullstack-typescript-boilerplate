@@ -2,8 +2,12 @@ import { deleteCookie, getCookie, getCookies, hasCookie, setCookie } from 'cooki
 
 import { isServer } from '@/utils';
 
-import type { Obj } from '@/types';
-import type { CookieStoreType, DefaultSetOptions, GetOptions } from '@/types/cookieStore.type';
+import type { Obj } from '@/@types';
+import type {
+  CookieStoreType,
+  DefaultSetOptions,
+  GetOptions,
+} from '@/lib/@types/cookieStore.types';
 
 const cookies = async () => {
   const { cookies: serverCookies } = await import('next/headers');

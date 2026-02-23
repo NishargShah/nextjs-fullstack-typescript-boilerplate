@@ -1,6 +1,6 @@
 import { getUser } from '@/store/slices/auth/auth.slice';
 
-import type { RootLayoutAppProps, ZustandState } from '@/types/zustandState.type';
+import type { RootLayoutAppProps, ZustandState } from '@/@types/zustandState.types';
 
 type ZustandStateHook = (props: RootLayoutAppProps) => ZustandState;
 

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import logo from '@/assets/images/next.svg';
 
-import type { Component } from '@/types';
+import type { Component } from '@/@types/next.types';
 
 interface WebsiteLoaderType {
   isTransparent?: boolean;

@@ -9,7 +9,7 @@ import { useRouter } from '@/hooks/useRouter';
 
 import type { SubmitHandler } from 'react-hook-form';
 
-import type { Component, Layout } from '@/types';
+import type { Component, Layout } from '@/@types/next.types';
 
 interface FormControlProps {
   label: string;

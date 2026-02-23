@@ -4,9 +4,9 @@ import { createContext, useContext, useRef } from 'react';
 
 import createStore from '@/store';
 
-import type { Layout } from '@/types';
-import type { ZustandContextValue } from '@/types/store.type';
-import type { ZustandProviderProps } from '@/types/zustandState.type';
+import type { Layout } from '@/@types/next.types';
+import type { ZustandContextValue } from '@/@types/store.types';
+import type { ZustandProviderProps } from '@/@types/zustandState.types';
 
 const ZustandContext = createContext<ZustandContextValue | undefined>(undefined);
 

@@ -3,7 +3,7 @@
 import styles from '@/components/users/Users.module.css';
 import { useUsers } from '@/features/users/useUsers';
 
-import type { Component } from '@/types';
+import type { Component } from '@/@types/next.types';
 
 const Users: Component = () => {
   const { data: users } = useUsers();

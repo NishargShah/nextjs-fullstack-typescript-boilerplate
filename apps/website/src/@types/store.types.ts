@@ -1,7 +1,7 @@
 import type { StateCreator, StoreApi } from 'zustand';
 
+import type { ZustandState } from '@/@types/zustandState.types';
 import type { StoreState } from '@/store';
-import type { ZustandState } from '@/types/zustandState.type';
 
 export type StateFromFunctions<T extends ((...args: never[]) => object)[]> = T extends [
   infer F,

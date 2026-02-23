@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 import type { ValueOf } from 'type-fest';
 
-import type { RecursiveType } from '@/types';
+import type { RecursiveType } from '@/@types';
 import type { HTTP_STATUSES } from '@server/_/constants';
 
 export interface ResOptions {
