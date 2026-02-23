@@ -5,7 +5,6 @@ import cookieStore from '@/lib/cookieStore';
 
 import type { NextProxy } from 'next/server';
 
-// eslint-disable-next-line import-x/prefer-default-export
 export const proxy: NextProxy = async (request) => {
   const { headers, nextUrl } = request;
   const { pathname } = nextUrl;

@@ -18,3 +18,17 @@ export const tsConfig = defineConfig([
     },
   },
 ]);
+
+export const reactTsConfig = defineConfig([
+  // TypeScript config
+  ...tsConfig,
+  // Airbnb React TypeScript config
+  ...configs.react.typescript,
+]);
+
+export const nextTsConfig = defineConfig([
+  // TypeScript config
+  ...tsConfig,
+  // Airbnb Next.js TypeScript config
+  ...configs.next.typescript,
+]);
