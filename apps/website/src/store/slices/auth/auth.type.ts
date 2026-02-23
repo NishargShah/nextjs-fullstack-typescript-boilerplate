@@ -1,4 +1,4 @@
-import type { GetProfileOutput } from '@/features/profile/profile.type';
+import type { GetProfileOutput } from '@/features/profile/useProfile';
 import type { RemoveFnType } from '@/types';
 import type { SliceCreator } from '@/types/store.type';
 

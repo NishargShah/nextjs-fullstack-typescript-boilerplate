@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 
 import App from '@/app/app';
 import constants from '@/constants';
-import { getProfileApi } from '@/features/profile/profile.api';
+import { getProfileApi } from '@/features/profile/useProfile';
 import cookieStore from '@/lib/cookieStore';
 import Loader from '@/shared/loader/Loader';
 import { getMode, getPreferredMode } from '@/store/slices/theme/theme.slice';
