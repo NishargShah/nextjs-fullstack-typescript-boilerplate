@@ -24,7 +24,7 @@
     "root:lint:fix": "eslint . --fix",
     "script:lint": "bash -e ./scripts/lint.sh",
     "typecheck": "pnpm -r typecheck",
-    "website:dev": "pnpm --filter @repo/website dev"
+    "web:dev": "pnpm --filter @repo/web dev"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

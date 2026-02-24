@@ -1,8 +1,8 @@
 {
-  "name": "@repo/website",
+  "name": "@repo/web",
   "version": "0.0.1",
   "private": true,
-  "description": "@repo/website description",
+  "description": "@repo/web description",
   "author": "Nisharg Shah",
   "type": "module",
   "scripts": {
