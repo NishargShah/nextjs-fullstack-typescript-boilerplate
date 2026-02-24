@@ -15,12 +15,6 @@ body {
   color: var(--theme-black);
 }
 
-/* Utils */
-
-.text-center {
-  text-align: center;
-}
-
 /* Website Loader */
 
 .website-loader {

@@ -21,7 +21,7 @@ export const HTTP_STATUSES = {
 
 const ERRORS = {
   UNKNOWN_ERROR: 'Something went wrong, please try again later!',
-  TECHNICAL_ERROR: 'It’s not you. It’s us. Give it another try, please!',
+  TECHNICAL_ERROR: "It's not you. It's us. Give it another try, please!",
   FORBIDDEN_ERROR: 'You do not have permission to perform this action',
   UNAUTHORIZED_ERROR: 'You are not logged in! please log in to get access',
   TOKEN_USER_NOT_EXIST_ERROR: 'The user belonging to this token does no longer exist',

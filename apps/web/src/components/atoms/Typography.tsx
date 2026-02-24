@@ -10,6 +10,7 @@ const defaultElement = 'p';
 export const typographyVariants = cva('whitespace-pre-line', {
   variants: {
     variant: {
+      title: 'text-3xl font-bold',
       content: 'text-base',
       inherit: 'text-inherit',
     },

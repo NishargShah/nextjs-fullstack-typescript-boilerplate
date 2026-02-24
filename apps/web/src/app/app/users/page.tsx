@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 
+import Typography from '@/components/atoms/Typography';
 import Users from '@/components/users/Users';
 import constants from '@/constants';
 
@@ -8,12 +9,14 @@ import type { Metadata } from 'next';
 import type { Component } from '@/@types/next.types';
 
 export const metadata = {
-  title: `Users | ${constants.APP_NAME}`,
+  title: ['Users', constants.APP_NAME].join(' | '),
 } satisfies Metadata;
 
 const UsersPage: Component = () => (
   <Fragment>
-    <h1 className="text-center">Hello, Protected Route</h1>
+    <Typography as="h1" className="text-center" variant="title">
+      Hello, Protected Route
+    </Typography>
     <Users />
   </Fragment>
 );
