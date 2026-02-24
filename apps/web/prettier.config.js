@@ -1,3 +1,3 @@
-import config from '@repo/prettier-config/base';
+import config from '@repo/prettier-config/tailwind';
 
 export default config;
