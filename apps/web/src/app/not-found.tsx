@@ -7,4 +7,4 @@ export const metadata = {
 } satisfies Metadata;
 
 // eslint-disable-next-line no-restricted-exports
-export { default } from '@/components/defaults/notFound/NotFound';
+export { default } from '@/components/core/NotFound';

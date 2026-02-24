@@ -1,6 +1,6 @@
 'use client';
 
-import Error from '@/components/defaults/error/Error';
+import Error from '@/components/core/Error';
 import { interFont } from '@/styles/font';
 
 import type { Component, NextErrorType } from '@/@types/next.types';
