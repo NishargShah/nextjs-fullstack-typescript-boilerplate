@@ -1,5 +1,5 @@
 import Providers from '@/app/providers';
-import Header from '@/components/header/Header';
+import Header from '@/components/organisms/Navbar';
 import AppClient from '@/components/templates/AppClient';
 
 import type { Layout } from '@/@types/next.types';

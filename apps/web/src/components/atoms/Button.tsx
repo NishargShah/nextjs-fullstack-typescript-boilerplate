@@ -13,9 +13,6 @@ const buttonVariants = cva('cursor-pointer', {
       primary: 'rounded-3xl bg-black px-4 py-2 text-white',
     },
   },
-  defaultVariants: {
-    variant: 'primary',
-  },
 });
 
 type ButtonVariant = VariantProps<typeof buttonVariants>;
