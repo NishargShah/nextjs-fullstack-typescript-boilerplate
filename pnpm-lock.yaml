@@ -35,6 +35,9 @@ importers:
       prettier-plugin-packagejson:
         specifier: ^3.0.0
         version: 3.0.0(prettier@3.8.1)
+      prettier-plugin-tailwindcss:
+        specifier: ^0.7.2
+        version: 0.7.2(prettier@3.8.1)
       tsc-files:
         specifier: ^1.1.4
         version: 1.1.4(typescript@5.9.3)
@@ -105,9 +108,6 @@ importers:
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
-      prettier-plugin-tailwindcss:
-        specifier: ^0.7.2
-        version: 0.7.2(prettier@3.8.1)
       tailwindcss:
         specifier: ^4.2.1
         version: 4.2.1
