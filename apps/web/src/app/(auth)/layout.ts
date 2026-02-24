@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 
-import isAuthenticated from '@/lib/isAuthenticated';
+import isAuthenticated from '@/helpers/isAuthenticated';
 
 import type { Layout } from '@/@types/next.types';
 
