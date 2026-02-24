@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 
 import App from '@/app/app';
+import Loader from '@/components/loader/Loader';
 import constants from '@/constants';
 import { getProfileApi } from '@/features/profile/useProfile';
 import cookieStore from '@/lib/cookieStore';
@@ -11,7 +12,6 @@ import '@/styles/globals.css';
 import type { Metadata } from 'next';
 
 import type { Layout } from '@/@types/next.types';
-import Loader from '@/components/loader/Loader';
 
 export const metadata: Metadata = {
   title: constants.APP_NAME,
