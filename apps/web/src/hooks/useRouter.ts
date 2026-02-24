@@ -1,1 +1,1 @@
-export { useRouter } from 'next-nprogress-bar';
+export { useRouter } from '@bprogress/next/app';

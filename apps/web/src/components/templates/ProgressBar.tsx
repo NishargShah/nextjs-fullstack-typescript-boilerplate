@@ -1,12 +1,14 @@
-import { AppProgressBar } from 'next-nprogress-bar';
+import { ProgressProvider } from '@bprogress/next/app';
 import ReactDOMServer from 'react-dom/server';
 
 import WebsiteLoader from '@/components/molecules/WebsiteLoader';
 import constants from '@/constants';
 
-import type { Component } from '@/@types/next.types';
+import type { Layout } from '@/@types/next.types';
 
-const ProgressBar: Component = () => {
+const ProgressBar: Layout = (props) => {
+  const { children } = props;
+
   const loader = ReactDOMServer.renderToString(<WebsiteLoader />);
 
   const template = `
@@ -17,10 +19,13 @@ const ProgressBar: Component = () => {
   `;
 
   return (
-    <AppProgressBar
+    <ProgressProvider
+      color="transparent"
       options={{ showSpinner: false, template }}
       stopDelay={constants.PROGRESS_BAR_DELAY}
-    />
+    >
+      {children}
+    </ProgressProvider>
   );
 };
 
