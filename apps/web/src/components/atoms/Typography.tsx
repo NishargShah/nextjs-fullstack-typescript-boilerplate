@@ -12,6 +12,7 @@ export const typographyVariants = cva('whitespace-pre-line', {
     variant: {
       title: 'text-3xl font-bold',
       content: 'text-base',
+      help: 'text-sm',
       inherit: 'text-inherit',
     },
     weight: {
