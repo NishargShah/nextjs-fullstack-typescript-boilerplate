@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
 import Typography from '@/components/atoms/Typography';
-import Dashboard from '@/components/dashboard/Dashboard';
+import Dashboard from '@/components/organisms/Dashboard';
 import constants from '@/constants';
 
 import type { Metadata } from 'next';
