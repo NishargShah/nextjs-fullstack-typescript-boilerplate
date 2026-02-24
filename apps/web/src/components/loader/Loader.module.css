@@ -14,8 +14,8 @@
   height: 50px;
   border-radius: 50%;
   background:
-    radial-gradient(farthest-side, var(--theme-black) 94%, #0000) top/8px 8px no-repeat,
-    conic-gradient(#0000 30%, var(--theme-black));
+    radial-gradient(farthest-side, var(--color-black) 94%, #0000) top/8px 8px no-repeat,
+    conic-gradient(#0000 30%, var(--color-black));
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
   animation: loader 1s infinite linear;
 }

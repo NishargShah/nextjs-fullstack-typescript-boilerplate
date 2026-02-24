@@ -4,6 +4,7 @@ import App from '@/app/app';
 import Loader from '@/components/loader/Loader';
 import constants from '@/constants';
 import { getProfileApi } from '@/features/profile/useProfile';
+import cn from '@/lib/cn';
 import cookieStore from '@/lib/cookieStore';
 import { getMode, getPreferredMode } from '@/store/slices/theme/theme.slice';
 import { interFont } from '@/styles/font';
@@ -41,7 +42,7 @@ const RootLayout: Layout = async ({ children }) => {
 
   return (
     <html data-theme={theme} lang="en">
-      <body className={interFont.className}>
+      <body className={cn(interFont.className, 'bg-white text-black')}>
         <Suspense fallback={<Loader />}>
           <App mode={mode} preferredMode={preferredMode} user={user}>
             {children}
