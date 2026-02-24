@@ -1,4 +1,4 @@
-import styles from '@/shared/loader/Loader.module.css';
+import styles from '@/components/loader/Loader.module.css';
 
 import type { Component } from '@/@types/next.types';
 

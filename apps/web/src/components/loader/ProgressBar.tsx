@@ -1,8 +1,8 @@
 import { AppProgressBar } from 'next-nprogress-bar';
 import ReactDOMServer from 'react-dom/server';
 
+import WebsiteLoader from '@/components/loader/WebsiteLoader';
 import constants from '@/constants';
-import WebsiteLoader from '@/shared/loader/WebsiteLoader';
 
 import type { Component } from '@/@types/next.types';
 
