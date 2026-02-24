@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
 import Typography from '@/components/atoms/Typography';
-import Users from '@/components/users/Users';
+import Users from '@/components/organisms/Users';
 import constants from '@/constants';
 
 import type { Metadata } from 'next';
