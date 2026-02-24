@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 
+import Typography from '@/components/atoms/Typography';
 import { useLogout } from '@/features/profile/useLogout';
 import { useRouter } from '@/hooks/useRouter';
 
@@ -23,7 +24,11 @@ const Logout: Component = () => {
     })();
   }, [logout, router]);
 
-  return <h1 className="text-center">Logging you out...</h1>;
+  return (
+    <Typography as="h1" className="text-center" variant="title">
+      Logging you out...
+    </Typography>
+  );
 };
 
 export default Logout;

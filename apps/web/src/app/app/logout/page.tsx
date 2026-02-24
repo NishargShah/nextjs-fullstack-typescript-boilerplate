@@ -1,4 +1,4 @@
-import Logout from '@/components/logout/Logout';
+import Logout from '@/components/templates/Logout';
 import constants from '@/constants';
 
 import type { Metadata } from 'next';
