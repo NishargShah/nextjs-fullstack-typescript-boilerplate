@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 
 import App from '@/app/app';
-import Loader from '@/components/loader/Loader';
+import Loader from '@/components/atoms/Loader';
 import constants from '@/constants';
 import { getProfileApi } from '@/features/profile/useProfile';
 import cn from '@/lib/cn';

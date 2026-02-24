@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect } from 'react';
 
-import WebsiteLoader from '@/components/loader/WebsiteLoader';
+import WebsiteLoader from '@/components/molecules/WebsiteLoader';
 import constants from '@/constants';
 import { useStore } from '@/hooks/useStore';
 import { sleep } from '@/utils';
