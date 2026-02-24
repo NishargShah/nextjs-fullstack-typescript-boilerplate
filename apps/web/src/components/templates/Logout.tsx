@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 
 import Typography from '@/components/atoms/Typography';
+import paths from '@/constants/paths';
 import { useLogout } from '@/features/profile/useLogout';
 import { useRouter } from '@/hooks/useRouter';
 
@@ -20,7 +21,7 @@ const Logout: Component = () => {
         // empty
       }
 
-      router.push('/');
+      router.push(paths.INDEX);
     })();
   }, [logout, router]);
 

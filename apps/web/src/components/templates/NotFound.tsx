@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 
 import Button from '@/components/atoms/Button';
 import Typography from '@/components/atoms/Typography';
+import paths from '@/constants/paths';
 
 import type { Component } from '@/@types/next.types';
 
@@ -19,7 +20,7 @@ const NotFound: Component = () => {
       <Typography as="p" variant="content">
         Could not find requested resource &quot;{pathname}&quot;
       </Typography>
-      <Link className="mt-4" href="/">
+      <Link className="mt-4" href={paths.INDEX}>
         <Button type="button" variant="primary">
           Try Again
         </Button>

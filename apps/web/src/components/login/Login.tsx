@@ -3,6 +3,7 @@
 import { useForm } from 'react-hook-form';
 
 import styles from '@/components/login/Login.module.css';
+import paths from '@/constants/paths';
 import { useLogin } from '@/features/auth/useLogin';
 import { useProfile } from '@/features/profile/useProfile';
 import { useRouter } from '@/hooks/useRouter';
@@ -46,7 +47,7 @@ const Login: Component = () => {
     try {
       await mutateAsync(data);
       await fetchProfile({});
-      router.push('/app');
+      router.push(paths.APP.INDEX);
     } catch (error) {
       console.error(error);
     }

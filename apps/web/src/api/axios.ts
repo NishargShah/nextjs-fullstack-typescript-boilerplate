@@ -3,6 +3,7 @@ import { toast } from 'react-hot-toast';
 
 import { showToast } from '@/api/utils';
 import { envs } from '@/config';
+import paths from '@/constants/paths';
 import cookieStore from '@/lib/cookieStore';
 import { isServer } from '@/utils';
 
@@ -58,9 +59,9 @@ axios.interceptors.response.use(
       if (
         error.response &&
         [401, 403].includes(error.response.status) &&
-        globalThis.location.pathname !== '/app/logout'
+        globalThis.location.pathname !== paths.APP.LOGOUT
       ) {
-        globalThis.location.assign('/app/logout');
+        globalThis.location.assign(paths.APP.LOGOUT);
       }
 
       showToast(error);

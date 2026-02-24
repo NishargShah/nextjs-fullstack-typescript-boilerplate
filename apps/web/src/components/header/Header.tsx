@@ -3,6 +3,7 @@
 import Link from 'next/link';
 
 import styles from '@/components/header/Header.module.css';
+import paths from '@/constants/paths';
 import { useRouter } from '@/hooks/useRouter';
 import { useStore } from '@/hooks/useStore';
 
@@ -18,24 +19,24 @@ const Header: Component = () => {
   return (
     <div className={styles.container}>
       <div>
-        <Link className={styles.link} href="/">
+        <Link className={styles.link} href={paths.INDEX}>
           Home
         </Link>
-        <Link className={styles.link} href="/about">
+        <Link className={styles.link} href={paths.ABOUT}>
           About
         </Link>
         {!isAuthenticated && (
-          <Link className={styles.link} href="/login">
+          <Link className={styles.link} href={paths.LOGIN}>
             Login
           </Link>
         )}
         {isAuthenticated ? (
-          <Link className={styles.link} href="/app">
+          <Link className={styles.link} href={paths.APP.INDEX}>
             Dashboard
           </Link>
         ) : null}
         {isAuthenticated ? (
-          <Link className={styles.link} href="/app/users">
+          <Link className={styles.link} href={paths.APP.USERS}>
             Users
           </Link>
         ) : null}
@@ -45,7 +46,11 @@ const Header: Component = () => {
           Mode: <span className={styles.capitalize}>{mode}</span>
         </button>
         {isAuthenticated ? (
-          <button className={styles.btn} onClick={() => router.push('/app/logout')} type="button">
+          <button
+            className={styles.btn}
+            onClick={() => router.push(paths.APP.LOGOUT)}
+            type="button"
+          >
             Logout
           </button>
         ) : null}
