@@ -42,7 +42,7 @@ const RootLayout: Layout = async ({ children }) => {
 
   return (
     <html data-theme={theme} lang="en">
-      <body className={cn(interFont.className, 'bg-white text-black')}>
+      <body className={cn(interFont.className, 'bg-background text-foreground')}>
         <Suspense fallback={<Loader />}>
           <App mode={mode} preferredMode={preferredMode} user={user}>
             {children}

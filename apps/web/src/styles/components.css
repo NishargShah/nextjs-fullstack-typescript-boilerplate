@@ -1,8 +1,8 @@
 @layer components {
   .loader {
     background:
-      radial-gradient(farthest-side, var(--color-black) 94%, #0000) top/8px 8px no-repeat,
-      conic-gradient(#0000 30%, var(--color-black));
+      radial-gradient(farthest-side, var(--color-foreground) 94%, #0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%, var(--color-foreground));
     -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
   }
 }

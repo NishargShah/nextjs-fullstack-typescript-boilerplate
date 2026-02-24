@@ -10,7 +10,7 @@ import type { Component } from '@/@types/next.types';
 const inputVariants = cva('', {
   variants: {
     variant: {
-      primary: 'rounded-sm border border-black px-2 py-1 focus-visible:outline-0',
+      primary: 'border-foreground rounded-sm border px-2 py-1 focus-visible:outline-0',
     },
   },
 });

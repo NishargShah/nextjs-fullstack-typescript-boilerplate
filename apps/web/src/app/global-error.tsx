@@ -8,7 +8,7 @@ import type { Component, NextErrorType } from '@/@types/next.types';
 
 const GlobalError: Component<NextErrorType> = (props) => (
   <html lang="en">
-    <body className={cn(interFont.className, 'bg-white text-black')}>
+    <body className={cn(interFont.className, 'bg-background text-foreground')}>
       <Error {...props} />
     </body>
   </html>

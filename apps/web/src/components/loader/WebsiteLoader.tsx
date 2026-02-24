@@ -12,9 +12,9 @@ interface WebsiteLoaderType {
 const WebsiteLoader: Component<WebsiteLoaderType> = ({ isTransparent = true }) => (
   <div
     className={clsx(
-      'fixed top-0 left-0 z-9999 flex h-dvh w-lvw items-center justify-center bg-white',
+      'bg-background fixed top-0 left-0 z-9999 flex h-dvh w-lvw items-center justify-center',
       {
-        'bg-white/75': isTransparent,
+        'bg-background/75': isTransparent,
       },
     )}
   >

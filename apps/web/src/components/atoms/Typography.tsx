@@ -26,6 +26,8 @@ export const typographyVariants = cva('whitespace-pre-line', {
     color: {
       white: 'text-white',
       black: 'text-black',
+      background: 'text-background',
+      foreground: 'text-foreground',
       content: 'text-gray-300',
     },
   },

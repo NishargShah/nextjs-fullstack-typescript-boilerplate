@@ -10,7 +10,7 @@ import type { Layout } from '@/@types/next.types';
 const buttonVariants = cva('cursor-pointer', {
   variants: {
     variant: {
-      primary: 'rounded-3xl bg-black px-4 py-2 text-white',
+      primary: 'text-background bg-foreground rounded-3xl px-4 py-2',
     },
   },
 });

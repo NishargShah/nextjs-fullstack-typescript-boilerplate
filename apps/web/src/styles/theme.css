@@ -2,9 +2,11 @@
 
 @theme {
   --animate-loader: loader 1s linear infinite;
+  --color-background: #fff;
+  --color-foreground: #000;
 }
 
 html[data-theme='dark'] {
-  --color-white: #000;
-  --color-black: #fff;
+  --color-background: #000;
+  --color-foreground: #fff;
 }
