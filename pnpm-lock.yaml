@@ -21,6 +21,9 @@ catalogs:
     react-dom:
       specifier: ^19.2.4
       version: 19.2.4
+    tailwindcss:
+      specifier: ^4.2.1
+      version: 4.2.2
 
 importers:
 
@@ -99,6 +102,9 @@ importers:
         specifier: ^5.0.11
         version: 5.0.12(@types/react@19.2.14)(react@19.2.4)
     devDependencies:
+      '@repo/tailwind':
+        specifier: workspace:*
+        version: link:../../packages/tailwind
       '@repo/types':
         specifier: workspace:*
         version: link:../../packages/types
@@ -124,7 +130,7 @@ importers:
         specifier: ^8.5.6
         version: 8.5.8
       tailwindcss:
-        specifier: ^4.2.1
+        specifier: 'catalog:'
         version: 4.2.2
       type-fest:
         specifier: ^5.4.4
@@ -165,6 +171,15 @@ importers:
   configs/prettier-config: {}
 
   configs/typescript-config: {}
+
+  packages/tailwind:
+    devDependencies:
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../configs/typescript-config
+      tailwindcss:
+        specifier: 'catalog:'
+        version: 4.2.2
 
   packages/types:
     devDependencies:
