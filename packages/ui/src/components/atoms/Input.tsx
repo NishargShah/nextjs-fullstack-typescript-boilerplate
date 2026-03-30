@@ -1,11 +1,10 @@
 import { cva } from 'class-variance-authority';
 
-import cn from '@/lib/cn';
+import { cn } from '@ui/lib';
 
+import type { Component } from '@repo/types';
 import type { VariantProps } from 'class-variance-authority';
 import type { ComponentProps } from 'react';
-
-import type { Component } from '@/@types/next.types';
 
 const inputVariants = cva('', {
   variants: {
@@ -21,10 +20,8 @@ type ActualInputVariant = Omit<InputVariant, 'variant'> & Required<Pick<InputVar
 
 export type InputProps = ActualInputVariant & ComponentProps<'input'>;
 
-const Input: Component<InputProps> = (props) => {
+export const Input: Component<InputProps> = (props) => {
   const { variant, className, ...restProps } = props;
 
   return <input {...restProps} className={cn(inputVariants({ variant }), className)} />;
 };
-
-export default Input;

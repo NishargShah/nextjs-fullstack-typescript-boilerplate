@@ -5,6 +5,4 @@ import type { ClassValue } from 'clsx';
 
 type Cn = (...inputs: ClassValue[]) => string;
 
-const cn: Cn = (...inputs) => twMerge(clsx(inputs));
-
-export default cn;
+export const cn: Cn = (...inputs) => twMerge(clsx(inputs));

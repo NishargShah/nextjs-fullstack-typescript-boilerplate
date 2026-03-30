@@ -1,8 +1,8 @@
-import Input from '@/components/atoms/Input';
-import Typography from '@/components/atoms/Typography';
+import { Input, Typography } from '@ui/components/atoms';
 
-import type { Component } from '@/@types/next.types';
-import type { InputProps } from '@/components/atoms/Input';
+import type { Component } from '@repo/types';
+
+import type { InputProps } from '@ui/components/atoms';
 
 interface FormInputProps extends InputProps {
   label: string;
@@ -10,7 +10,7 @@ interface FormInputProps extends InputProps {
   error?: string;
 }
 
-const FormInput: Component<FormInputProps> = (props) => {
+export const FormInput: Component<FormInputProps> = (props) => {
   const { label, labelFor, error, ...rest } = props;
 
   return (
@@ -27,5 +27,3 @@ const FormInput: Component<FormInputProps> = (props) => {
     </div>
   );
 };
-
-export default FormInput;

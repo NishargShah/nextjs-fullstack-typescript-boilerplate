@@ -1,0 +1,14 @@
+{
+  "extends": "@repo/typescript-config/base",
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "paths": {
+      "@ui/*": ["./src/*"],
+      "@type/*": ["../types/src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

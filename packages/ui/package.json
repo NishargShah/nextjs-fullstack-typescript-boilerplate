@@ -1,0 +1,39 @@
+{
+  "name": "@repo/ui",
+  "version": "0.0.1",
+  "private": true,
+  "description": "@repo/ui description",
+  "author": "Nisharg Shah",
+  "type": "module",
+  "exports": {
+    "./atoms": "./src/components/atoms/index.ts",
+    "./molecules": "./src/components/molecules/index.ts",
+    "./lib": "./src/components/lib/index.ts"
+  },
+  "scripts": {
+    "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
+    "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/ui",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@repo/types": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "type-fest": "^5.4.4"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

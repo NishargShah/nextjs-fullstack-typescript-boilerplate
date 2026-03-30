@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-import cn from '@/lib/cn';
+import { cn } from '@ui/lib';
 
 import type { VariantProps } from 'class-variance-authority';
 import type { ComponentPropsWithoutRef, ReactNode, RefObject } from 'react';
@@ -52,7 +52,7 @@ type TypographyType = <T extends TypographyElement = typeof defaultElement>(
   props: TypographyProps<T>,
 ) => ReactNode;
 
-const Typography: TypographyType = (props) => {
+export const Typography: TypographyType = (props) => {
   const {
     children,
     className,
@@ -71,5 +71,3 @@ const Typography: TypographyType = (props) => {
     </Component>
   );
 };
-
-export default Typography;

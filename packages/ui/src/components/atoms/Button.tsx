@@ -1,11 +1,10 @@
 import { cva } from 'class-variance-authority';
 
-import cn from '@/lib/cn';
+import { cn } from '@ui/lib';
 
+import type { Layout } from '@repo/types';
 import type { VariantProps } from 'class-variance-authority';
 import type { ButtonHTMLAttributes, ComponentPropsWithRef } from 'react';
-
-import type { Layout } from '@/@types/next.types';
 
 const buttonVariants = cva('cursor-pointer', {
   variants: {
@@ -24,7 +23,7 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
   ActualButtonVariant &
   ComponentPropsWithRef<'button'>;
 
-const Button: Layout<ButtonProps> = (props) => {
+export const Button: Layout<ButtonProps> = (props) => {
   const { children, className, variant, ...restProps } = props;
 
   return (
@@ -33,5 +32,3 @@ const Button: Layout<ButtonProps> = (props) => {
     </button>
   );
 };
-
-export default Button;
