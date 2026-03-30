@@ -1,8 +1,8 @@
 {
   "name": "@repo/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Eslint Config",
+  "description": "@repo/eslint-config description",
   "author": "Nisharg Shah <nishargshah3101@gmail.com>",
   "type": "module",
   "exports": {
@@ -18,7 +18,8 @@
     "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
     "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/eslint-config"
   },
   "dependencies": {
     "@eslint/compat": "^2.0.2",

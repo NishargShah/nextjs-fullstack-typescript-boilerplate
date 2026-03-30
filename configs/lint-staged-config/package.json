@@ -1,8 +1,8 @@
 {
   "name": "@repo/lint-staged-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Lint Staged Config",
+  "description": "@repo/lint-staged-config description",
   "author": "Nisharg Shah <nishargshah3101@gmail.com>",
   "type": "module",
   "exports": {
@@ -14,7 +14,8 @@
     "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
     "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/lint-staged-config"
   },
   "engines": {
     "node": ">=24.0.0"
