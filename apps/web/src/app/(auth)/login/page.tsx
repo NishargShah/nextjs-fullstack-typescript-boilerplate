@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 
-import { Typography } from '@ui/components/atoms';
+import { Typography } from '@repo/ui/atoms';
 
 import Login from '@/components/organisms/Login';
 import constants from '@/constants';

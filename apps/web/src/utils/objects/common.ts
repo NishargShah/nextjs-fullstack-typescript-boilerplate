@@ -1,4 +1,4 @@
-import type { Obj } from '@/@types';
+import type { Obj } from '@repo/types';
 
 // Check is object
 export type IsObject = <T, U = undefined>(obj: U extends undefined ? Obj<T> : T) => boolean;

@@ -8,7 +8,7 @@
   "exports": {
     "./atoms": "./src/components/atoms/index.ts",
     "./molecules": "./src/components/molecules/index.ts",
-    "./lib": "./src/components/lib/index.ts"
+    "./lib": "./src/lib/index.ts"
   },
   "scripts": {
     "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
