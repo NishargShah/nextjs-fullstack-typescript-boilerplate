@@ -1,0 +1,27 @@
+{
+  "name": "@repo/types",
+  "version": "0.0.1",
+  "private": true,
+  "description": "@repo/types description",
+  "author": "Nisharg Shah",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
+    "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/types",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/react": "catalog:",
+    "react": "catalog:"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
