@@ -1,9 +1,7 @@
+import { Button, Typography } from '@repo/ui/atoms';
 import { useQueryErrorResetBoundary } from '@tanstack/react-query';
 
-import Button from '@/components/atoms/Button';
-import Typography from '@/components/atoms/Typography';
-
-import type { Component, NextErrorType } from '@/@types/next.types';
+import type { Component, NextErrorType } from '@repo/types';
 
 const Error: Component<NextErrorType> = ({ error, reset }) => {
   const { reset: queryReset } = useQueryErrorResetBoundary();

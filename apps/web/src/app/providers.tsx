@@ -10,7 +10,8 @@ import { useZustandState } from '@/hooks/useZustandState';
 import queryClient from '@/lib/queryClient';
 import ZustandProvider from '@/providers/ZustandProvider';
 
-import type { Layout } from '@/@types/next.types';
+import type { Layout } from '@repo/types';
+
 import type { RootLayoutAppProps } from '@/@types/zustandState.types';
 
 type ProvidersProps = RootLayoutAppProps;

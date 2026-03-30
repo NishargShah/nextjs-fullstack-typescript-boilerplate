@@ -2,12 +2,13 @@
 
 import { useCallback, useEffect } from 'react';
 
-import WebsiteLoader from '@/components/molecules/WebsiteLoader';
+import { WebsiteLoader } from '@repo/ui/molecules';
+
 import constants from '@/constants';
 import { useStore } from '@/hooks/useStore';
 import { sleep } from '@/utils';
 
-import type { Component } from '@/@types/next.types';
+import type { Component } from '@repo/types';
 
 const AppClient: Component = () => {
   const isLoading = useStore((state) => state.isLoading);

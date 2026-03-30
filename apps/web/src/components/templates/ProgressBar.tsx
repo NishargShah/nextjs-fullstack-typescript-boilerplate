@@ -1,10 +1,10 @@
 import { ProgressProvider } from '@bprogress/next/app';
+import { WebsiteLoader } from '@repo/ui/molecules';
 import ReactDOMServer from 'react-dom/server';
 
-import WebsiteLoader from '@/components/molecules/WebsiteLoader';
 import constants from '@/constants';
 
-import type { Layout } from '@/@types/next.types';
+import type { Layout } from '@repo/types';
 
 const ProgressBar: Layout = (props) => {
   const { children } = props;

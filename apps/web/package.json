@@ -18,29 +18,29 @@
   },
   "dependencies": {
     "@bprogress/next": "^3.2.12",
+    "@repo/ui": "workspace:*",
     "@tanstack/react-query": "5.90.21",
     "axios": "^1.13.5",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
     "cookies-next": "^6.1.1",
-    "next": "^16.1.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "react-hook-form": "^7.71.2",
     "react-hot-toast": "^2.6.0",
-    "tailwind-merge": "^3.5.0",
     "zustand": "^5.0.11"
   },
   "devDependencies": {
+    "@repo/types": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.2.1",
     "@tanstack/eslint-plugin-query": "^5.91.4",
     "@tanstack/react-query-devtools": "5.91.3",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "postcss": "^8.5.6",
     "tailwindcss": "^4.2.1",
-    "type-fest": "^5.4.4"
+    "type-fest": "^5.4.4",
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=24.0.0"

@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
 
-import Typography from '@/components/atoms/Typography';
+import { Typography } from '@ui/components/atoms';
+
 import Login from '@/components/organisms/Login';
 import constants from '@/constants';
 
+import type { Component } from '@repo/types';
 import type { Metadata } from 'next';
-
-import type { Component } from '@/@types/next.types';
 
 export const metadata = {
   title: ['Login', constants.APP_NAME].join(' | '),

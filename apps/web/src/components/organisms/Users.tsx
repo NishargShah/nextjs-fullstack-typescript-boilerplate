@@ -2,7 +2,7 @@
 
 import { useUsers } from '@/features/users/useUsers';
 
-import type { Component } from '@/@types/next.types';
+import type { Component } from '@repo/types';
 
 const Users: Component = () => {
   const { data: users } = useUsers();

@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
 
-import Typography from '@/components/atoms/Typography';
+import { Typography } from '@repo/ui/atoms';
+
 import Dashboard from '@/components/organisms/Dashboard';
 import constants from '@/constants';
 
+import type { Component } from '@repo/types';
 import type { Metadata } from 'next';
-
-import type { Component } from '@/@types/next.types';
 
 export const metadata = {
   title: ['Dashboard', constants.APP_NAME].join(' | '),

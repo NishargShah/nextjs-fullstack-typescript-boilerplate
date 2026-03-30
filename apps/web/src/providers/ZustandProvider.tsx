@@ -4,7 +4,8 @@ import { createContext, useContext, useRef } from 'react';
 
 import createStore from '@/store';
 
-import type { Layout } from '@/@types/next.types';
+import type { Layout } from '@repo/types';
+
 import type { ZustandContextValue } from '@/@types/store.types';
 import type { ZustandProviderProps } from '@/@types/zustandState.types';
 

@@ -2,7 +2,8 @@ import { deleteCookie, getCookie, getCookies, hasCookie, setCookie } from 'cooki
 
 import { isServer } from '@/utils';
 
-import type { Obj } from '@/@types';
+import type { Obj } from '@repo/types';
+
 import type {
   CookieStoreType,
   DefaultSetOptions,

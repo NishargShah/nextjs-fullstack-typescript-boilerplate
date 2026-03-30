@@ -1,13 +1,13 @@
 'use client';
 
+import { Button } from '@repo/ui/atoms';
 import Link from 'next/link';
 
-import Button from '@/components/atoms/Button';
 import paths from '@/constants/paths';
 import { useRouter } from '@/hooks/useRouter';
 import { useStore } from '@/hooks/useStore';
 
-import type { Component } from '@/@types/next.types';
+import type { Component } from '@repo/types';
 
 const Navbar: Component = () => {
   const router = useRouter();

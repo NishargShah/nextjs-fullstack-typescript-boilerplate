@@ -1,10 +1,11 @@
 'use client';
 
+import { cn } from '@repo/ui/lib';
+
 import Error from '@/components/templates/Error';
-import cn from '@/lib/cn';
 import { interFont } from '@/styles/font';
 
-import type { Component, NextErrorType } from '@/@types/next.types';
+import type { Component, NextErrorType } from '@repo/types';
 
 const GlobalError: Component<NextErrorType> = (props) => (
   <html lang="en">

@@ -1,7 +1,7 @@
+import type { Obj } from '@repo/types';
 import type { ResponseCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 import type { ValueOf } from 'type-fest';
 
-import type { Obj } from '@/@types';
 import type constants from '@/constants';
 
 export type DefaultSetOptions = Partial<ResponseCookie> & {

@@ -1,17 +1,16 @@
 'use client';
 
+import { Button } from '@repo/ui/atoms';
+import { FormInput } from '@repo/ui/molecules';
 import { useForm } from 'react-hook-form';
 
-import Button from '@/components/atoms/Button';
-import FormInput from '@/components/molecules/FormInput';
 import paths from '@/constants/paths';
 import { useLogin } from '@/features/auth/useLogin';
 import { useProfile } from '@/features/profile/useProfile';
 import { useRouter } from '@/hooks/useRouter';
 
+import type { Component } from '@repo/types';
 import type { SubmitHandler } from 'react-hook-form';
-
-import type { Component } from '@/@types/next.types';
 
 interface FormData {
   email: string;

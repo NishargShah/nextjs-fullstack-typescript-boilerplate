@@ -2,12 +2,13 @@
 
 import { useEffect } from 'react';
 
-import Typography from '@/components/atoms/Typography';
+import { Typography } from '@repo/ui/atoms';
+
 import paths from '@/constants/paths';
 import { useLogout } from '@/features/profile/useLogout';
 import { useRouter } from '@/hooks/useRouter';
 
-import type { Component } from '@/@types/next.types';
+import type { Component } from '@repo/types';
 
 const Logout: Component = () => {
   const router = useRouter();

@@ -1,13 +1,12 @@
 'use client';
 
+import { Button, Typography } from '@repo/ui/atoms';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import Button from '@/components/atoms/Button';
-import Typography from '@/components/atoms/Typography';
 import paths from '@/constants/paths';
 
-import type { Component } from '@/@types/next.types';
+import type { Component } from '@repo/types';
 
 const NotFound: Component = () => {
   const pathname = usePathname();

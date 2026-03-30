@@ -1,5 +1,4 @@
-import type { RemoveFnType } from '@/@types';
-import type { SliceCreator } from '@/@types/store.types';
+import type { RemoveFnType, SliceCreator } from '@/@types/store.types';
 import type { GetProfileOutput } from '@/features/profile/useProfile';
 
 interface AuthSlice {

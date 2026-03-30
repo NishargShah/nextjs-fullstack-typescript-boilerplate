@@ -1,9 +1,10 @@
 'use client';
 
-import Typography from '@/components/atoms/Typography';
+import { Typography } from '@repo/ui/atoms';
+
 import { useStore } from '@/hooks/useStore';
 
-import type { Component } from '@/@types/next.types';
+import type { Component } from '@repo/types';
 
 const Dashboard: Component = () => {
   const user = useStore((state) => state.user);

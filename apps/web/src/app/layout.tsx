@@ -1,18 +1,18 @@
 import { Suspense } from 'react';
 
+import { Loader } from '@repo/ui/atoms';
+import { cn } from '@repo/ui/lib';
+
 import App from '@/app/app';
-import Loader from '@/components/atoms/Loader';
 import constants from '@/constants';
 import { getProfileApi } from '@/features/profile/useProfile';
-import cn from '@/lib/cn';
 import cookieStore from '@/lib/cookieStore';
 import { getMode, getPreferredMode } from '@/store/slices/theme/theme.slice';
 import { interFont } from '@/styles/font';
 import '@/styles/globals.css';
 
+import type { Layout } from '@repo/types';
 import type { Metadata } from 'next';
-
-import type { Layout } from '@/@types/next.types';
 
 export const metadata: Metadata = {
   title: constants.APP_NAME,
