@@ -1,0 +1,25 @@
+{
+  "name": "@repo/tailwind",
+  "version": "0.0.1",
+  "private": true,
+  "description": "@repo/tailwind description",
+  "author": "Nisharg Shah",
+  "type": "module",
+  "exports": {
+    ".": "./src/styles/index.css"
+  },
+  "scripts": {
+    "format": "prettier . --check --log-level silent --ignore-path ../../.gitignore",
+    "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/tailwind"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "tailwindcss": "catalog:"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
