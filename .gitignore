@@ -5,7 +5,6 @@ node_modules
 
 # ignore folders
 .git
-.husky
 
 # testing
 coverage
