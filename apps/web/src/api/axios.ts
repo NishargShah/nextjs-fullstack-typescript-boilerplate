@@ -4,12 +4,12 @@ import { toast } from 'react-hot-toast';
 import { showToast } from '@/api/utils';
 import { envs } from '@/config';
 import paths from '@/constants/paths';
-import cookieStore from '@/lib/cookieStore';
+import { cookieStore } from '@/lib/cookieStore';
 import { isServer } from '@/utils';
 
 import type { AxiosError } from 'axios';
 
-import type { InternalAxiosRequestConfigWithExtraProps } from '@/api/@types/api.types';
+import type { InternalAxiosRequestConfigWithExtraProps } from '@/api/types/api.types';
 import type { AxiosErr } from '@/api/utils';
 
 const axios = axiosInstance.create({ baseURL: envs.NEXT_PUBLIC_API_PATH, withCredentials: true });

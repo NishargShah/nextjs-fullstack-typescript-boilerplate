@@ -4,7 +4,7 @@ import AppClient from '@/components/templates/AppClient';
 
 import type { Layout } from '@repo/types';
 
-import type { RootLayoutAppProps } from '@/@types/zustandState.types';
+import type { RootLayoutAppProps } from '@/types/zustandState.types';
 
 const App: Layout<RootLayoutAppProps> = ({ children, ...props }) => (
   <Providers {...props}>

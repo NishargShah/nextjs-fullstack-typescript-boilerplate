@@ -1,5 +1,5 @@
 import constants from '@/constants';
-import cookieStore from '@/lib/cookieStore';
+import { cookieStore } from '@/lib/cookieStore';
 
 import type {
   CreateThemeSlice,

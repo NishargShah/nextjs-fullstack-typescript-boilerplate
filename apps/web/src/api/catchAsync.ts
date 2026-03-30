@@ -2,7 +2,7 @@ import { throwAxiosError } from '@/api/utils';
 
 import type { Promisable } from 'type-fest';
 
-import type { AxiosSignal, PaginatedOutput } from '@/api/@types/api.types';
+import type { AxiosSignal, PaginatedOutput } from '@/api/types/api.types';
 
 export type CatchAsyncDataParams<T> = T & AxiosSignal;
 

@@ -1,4 +1,4 @@
-import type { Endpoints } from '@/api/@types/api.types';
+import type { Endpoints } from '@/api/types/api.types';
 
 const endpoints = {
   login: {

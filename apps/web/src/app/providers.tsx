@@ -12,7 +12,7 @@ import ZustandProvider from '@/providers/ZustandProvider';
 
 import type { Layout } from '@repo/types';
 
-import type { RootLayoutAppProps } from '@/@types/zustandState.types';
+import type { RootLayoutAppProps } from '@/types/zustandState.types';
 
 type ProvidersProps = RootLayoutAppProps;
 

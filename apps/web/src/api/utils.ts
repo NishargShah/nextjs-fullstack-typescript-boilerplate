@@ -8,7 +8,7 @@ import type {
   ShowToast,
   SuccessOutput,
   ThrowAxiosError,
-} from '@/api/@types/api.types';
+} from '@/api/types/api.types';
 
 export class AxiosErr extends AxiosError {
   declare config?: AxiosErrConfig;

@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 import constants from '@/constants';
-import cookieStore from '@/lib/cookieStore';
+import { cookieStore } from '@/lib/cookieStore';
 
 import type { NextProxy } from 'next/server';
 

@@ -1,4 +1,4 @@
-import type { Environment } from '@/constants/@types/objects.types';
+import type { Environment } from '@/constants/types/objects.types';
 
 const envs = {
   NODE_ENV: process.env.NODE_ENV as Environment,

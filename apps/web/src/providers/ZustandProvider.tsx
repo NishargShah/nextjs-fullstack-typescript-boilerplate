@@ -6,8 +6,8 @@ import createStore from '@/store';
 
 import type { Layout } from '@repo/types';
 
-import type { ZustandContextValue } from '@/@types/store.types';
-import type { ZustandProviderProps } from '@/@types/zustandState.types';
+import type { ZustandContextValue } from '@/types/store.types';
+import type { ZustandProviderProps } from '@/types/zustandState.types';
 
 const ZustandContext = createContext<ZustandContextValue | undefined>(undefined);
 

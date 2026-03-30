@@ -1,4 +1,4 @@
-import cookieStore from '@/lib/cookieStore';
+import { cookieStore } from '@/lib/cookieStore';
 import constants from '@server/_/constants';
 import getBody from '@server/_/functions/getBody';
 import sendError from '@server/_/functions/sendError';

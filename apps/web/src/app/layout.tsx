@@ -6,7 +6,7 @@ import { cn } from '@repo/ui/lib';
 import App from '@/app/app';
 import constants from '@/constants';
 import { getProfileApi } from '@/features/profile/useProfile';
-import cookieStore from '@/lib/cookieStore';
+import { cookieStore } from '@/lib/cookieStore';
 import { getMode, getPreferredMode } from '@/store/slices/theme/theme.slice';
 import { interFont } from '@/styles/font';
 import '@/styles/globals.css';

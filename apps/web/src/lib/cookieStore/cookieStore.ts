@@ -8,7 +8,7 @@ import type {
   CookieStoreType,
   DefaultSetOptions,
   GetOptions,
-} from '@/lib/@types/cookieStore.types';
+} from '@/lib/cookieStore/cookieStore.types';
 
 const cookies = async () => {
   const { cookies: serverCookies } = await import('next/headers');
@@ -25,7 +25,7 @@ const getOptions: GetOptions = (options = {}) => {
   return { ...defaultSetOptions, ...options };
 };
 
-const cookieStore: CookieStoreType = {
+export const cookieStore: CookieStoreType = {
   get(key) {
     const token = hasCookie(key) ? getCookie(key) : null;
     return (token as Awaited<typeof token>) ?? null;
@@ -100,5 +100,3 @@ const cookieStore: CookieStoreType = {
     return this.delete(key);
   },
 };
-
-export default cookieStore;

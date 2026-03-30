@@ -1,7 +1,7 @@
 import axios from '@/api/axios';
 import endpoints from '@/api/endpoints';
 
-import type { AxiosOutput, AxiosPaginatedOutput } from '@/api/@types/api.types';
+import type { AxiosOutput, AxiosPaginatedOutput } from '@/api/types/api.types';
 
 const nonPaginatedApis = {
   login: async (data) => axios({ ...endpoints.login, ...data }),

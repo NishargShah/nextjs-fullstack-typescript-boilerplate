@@ -1,8 +1,8 @@
 import type { ConditionalExcept } from 'type-fest';
 import type { StateCreator, StoreApi } from 'zustand';
 
-import type { ZustandState } from '@/@types/zustandState.types';
 import type { StoreState } from '@/store';
+import type { ZustandState } from '@/types/zustandState.types';
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-function-type
 export type RemoveFnType<T> = ConditionalExcept<T, Function>;

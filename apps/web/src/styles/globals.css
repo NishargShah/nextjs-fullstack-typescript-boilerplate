@@ -1,5 +1,5 @@
 @import '@repo/tailwind';
-@source "../../../../packages/ui";
+@source '../../../../packages/ui';
 
 @import './keyframes.css';
 @import './components.css';

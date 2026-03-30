@@ -1,7 +1,7 @@
 import type { ValueOf } from 'type-fest';
 
-import type { RemoveFnType, SliceCreator } from '@/@types/store.types';
 import type constants from '@/constants';
+import type { RemoveFnType, SliceCreator } from '@/types/store.types';
 
 type ThemeMode = ValueOf<typeof constants.THEME>;
 type PreferredMode = Exclude<ThemeMode, typeof constants.THEME.SYSTEM>;
