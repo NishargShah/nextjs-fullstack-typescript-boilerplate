@@ -13,7 +13,7 @@
     "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/tailwind"
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/tailwind --no-typecheck"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",

@@ -19,7 +19,7 @@
     "format:fix": "prettier . --write --log-level silent --ignore-path ../../.gitignore",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/eslint-config"
+    "script:lint": "bash -e ../../scripts/lint.sh --filter=@repo/eslint-config --no-typecheck"
   },
   "dependencies": {
     "@eslint/compat": "^2.0.4",
