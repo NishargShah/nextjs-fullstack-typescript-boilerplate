@@ -3,16 +3,14 @@ packages:
   - configs/*
   - packages/*
 
-ignoredBuiltDependencies:
-  - unrs-resolver
-
-onlyBuiltDependencies:
-  - sharp
+allowBuilds:
+  sharp: true
+  unrs-resolver: false
 
 catalog:
   '@types/react': ^19.2.14
   '@types/react-dom': ^19.2.3
-  next: ^16.1.6
-  react-dom: ^19.2.4
-  react: ^19.2.4
-  tailwindcss: ^4.2.1
+  next: ^16.2.6
+  react-dom: ^19.2.6
+  react: ^19.2.6
+  tailwindcss: ^4.3.0
